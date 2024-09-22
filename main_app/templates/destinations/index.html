@@ -11,8 +11,17 @@
 
 {% block content %}
 
-{% for destination in destinations %}
-  <a href="{% url "destination-detail" destination.id %}"><p>{{ destination.name }}</p></a>
-{% endfor %}
+<section class="card-container">
+  {% for destination in destinations %}
+    <a href="{% url "destination-detail" destination.id %}">
+      <div class="card" style="background-image: url({{ destination.image_url }})">
+        <div class="card-content" >
+          <h2>{{ destination.name }}</h2>
+        </div>
+      </div>
+    </a>
+  {% endfor %}
+</section>
+
 
 {% endblock %}

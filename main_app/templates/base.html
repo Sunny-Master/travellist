@@ -11,6 +11,11 @@
     type="image/png"
     href=""
   >
+  <script 
+		src="https://kit.fontawesome.com/ab7fddb901.js"
+		crossorigin="anonymous"
+	>
+  </script>
   <title>Travellist</title>
   <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
   {% block head %}
@@ -18,18 +23,14 @@
 </head>
 <body>
   <header>
-    <div>
+    <div class="header-logo">
       <a href="/">
-        <img 
-          src=""
-          alt="The Travellist Logo"
-        >
+        <i class="fa-solid fa-cart-flatbed-suitcase fa-2xl" style="color: #FCA311;"></i>
+        <h1>Travellist</h1>
       </a>
     </div>
     <nav>
-      <ul>
-        <li><a href="/destinations">All Destinations</a></li>
-      </ul>
+      <a href="/destinations">All Destinations</a></li>
     </nav>
   </header>
   <main>
