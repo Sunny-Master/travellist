@@ -1,9 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django_countries.fields import CountryField
 
-D_Types = (
-  ('O', 'Other')
+D_TYPES = (
+  ('O', 'Other'),
   ('B', 'Beach / Island'),
   ('W', 'Waterfall'),
   ('H', 'Hill / Mountain / Cliff'),
@@ -20,10 +19,10 @@ class Destination(models.Model):
   name = models.CharField(max_length=100)
   type = models.CharField(
     max_length=1,
-    choices=D_Types,
-    default=D_Types[0][0]
+    choices=D_TYPES,
+    default=D_TYPES[0][0]
   )
-  country = CountryField()
+  country = models.CharField(max_length=100)
   rating = models.IntegerField(default=0)
   image_url = models.URLField(
     max_length=500,
@@ -34,6 +33,3 @@ class Destination(models.Model):
 
   def __str__(self):
     return self.name
-  
-  def __str__(self.type):
-    return self.get_type_display()
