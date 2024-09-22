@@ -11,8 +11,8 @@
 
 {% block content %}
 
-{% for place in destinations %}
-  <p>{{ place.name }}</p>
+{% for destination in destinations %}
+  <a href="{% url "destination-detail" destination.id %}"><p>{{ destination.name }}</p></a>
 {% endfor %}
 
 {% endblock %}
