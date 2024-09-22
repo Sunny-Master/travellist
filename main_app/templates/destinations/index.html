@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link 
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'css/destinations/destination-index.css' %}"
+/>
+{% endblock %}
+
+{% block content %}
+
+{% for place in destinations %}
+  <p>{{ place.name }}</p>
+{% endfor %}
+
+{% endblock %}
