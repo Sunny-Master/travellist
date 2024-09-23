@@ -13,6 +13,7 @@
   box-shadow: var(--card-box-shadow);
   background-size: cover;
   background-position: center;
+  border-radius: var(--card-border-radius);
 }
 
 .card-content {

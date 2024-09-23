@@ -29,6 +29,7 @@ body {
   --borders: rgb(36, 116, 248) solid 2px;
   --card-box-shadow: 5px 5px 6px -1px #797878;
   --text-color: white;
+  --card-border-radius: 6px;
   background-color: #E5E5E5;
 }
 
@@ -57,7 +58,6 @@ header {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-
 }
 
 nav {
@@ -75,5 +75,5 @@ nav a {
 }
 
 main {
-  margin-top: 6rem;
+  margin: 1rem;
 }
