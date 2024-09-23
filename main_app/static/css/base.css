@@ -30,6 +30,8 @@ body {
   --card-box-shadow: 5px 5px 6px -1px #797878;
   --text-color: white;
   --card-border-radius: 6px;
+  --font-l: 1.8rem;
+  --font-reg: 1.6rem;
   background-color: #E5E5E5;
 }
 

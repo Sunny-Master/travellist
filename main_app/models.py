@@ -23,10 +23,10 @@ class Destination(models.Model):
     choices=D_TYPES,
     default=D_TYPES[0][0]
   )
-  city = models.CharField(max_length=100, default='not known')
+  city = models.CharField(max_length=100)
   country = models.CharField(max_length=100)
-  comment = models.TextField(max_length=250, default="no comments")
-  rating = models.IntegerField(default=0)
+  comment = models.TextField(max_length=250)
+  rating = models.IntegerField(default=1, choices=[(i, str(i)) for i in range(1, 6)])
   image_url = models.URLField(
     max_length=500,
     blank=True,
@@ -38,4 +38,4 @@ class Destination(models.Model):
     return self.name
 
   def get_absolute_url(self):
-    return reverse('destination-detail', kwargs={'destination_id': self.id})
+    return reverse('destination-detail', kwargs={'pk': self.id})
