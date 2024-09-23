@@ -7,6 +7,7 @@
   type="text/css" 
   href="{% static 'css/destinations/destination-detail.css' %}"
 />
+<script defer src="{% static 'js/destination-detail.js' %}"></script>
 {% endblock %}
 
 {% block content %}
@@ -14,7 +15,7 @@
 <section class="card">
   <div class="card-content">
     <h1>{{ destination.name }}</h1>
-    <div class="img-container">
+    <div class="img-container" id="destination-image">
       <img 
       src="{{destination.image_url}}" 
       alt="{{destination.name}}"
@@ -51,6 +52,14 @@
       </a>
     </div>
   </div>
+</section>
+
+<section id="screen-overlay">
+  <img 
+    src="{{destination.image_url}}" 
+    alt="{{destination.name}}"
+    class="image-overlay"
+  >
 </section>
 
 {% endblock %}

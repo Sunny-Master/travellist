@@ -1,12 +1,10 @@
-const dateInput = document.getElementById('id_date')
+const image = document.getElementById('destination-image')
+const overlay = document.getElementById('screen-overlay')
 
-const picker = MCDatepicker.create({
-  el: '#id_date',
-  dateFormat: 'yyyy-mm-dd',
-  closeOnBlur: true,
-  selectedDate: new Date(),
+image.addEventListener('click', () => {
+  overlay.style.display = 'flex'
 })
 
-dateInput.addEventListener("click", () => {
-  picker.open()
+overlay.addEventListener('click', () => {
+  overlay.style.display = 'none'
 })
