@@ -14,10 +14,17 @@
   align-items: center;
 }
 
-.card-content img {
-  margin: 0.25rem 0;
-  width: 95%;
-  border-radius: var(--card-border-radius);
+.img-container {
+  aspect-ratio: 4/3;
+}
+
+.img-container img {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  
 }
 
 .second-half {

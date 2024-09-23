@@ -7,9 +7,8 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 def home(request):
   return render(request, 'home.html')
 
-def destination_index(request):
-  destinations = Destination.objects.all()
-  return render(request, 'destinations/index.html', { 'destinations': destinations })
+class DestinationList(ListView):
+  model = Destination
 
 class DestinationDetail(DetailView):
   model = Destination

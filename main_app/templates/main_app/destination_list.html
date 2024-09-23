@@ -12,7 +12,7 @@
 {% block content %}
 
 <section class="card-container">
-  {% for destination in destinations %}
+  {% for destination in destination_list %}
     <a href="{% url "destination-detail" destination.id %}">
       <div class="card" style="background-image: url({{ destination.image_url }})">
         <div class="card-content" >
