@@ -20,9 +20,15 @@
   <div class="card-content">
     <div>
       {% if destination %}
-        <h1>Edit {{ destination.name }}</h1>
+        <h1>
+          <i class="fa-solid fa-pen-to-square fa-lg" style="color: #FCA311;"></i>
+          Edit {{ destination.name }}
+        </h1>
       {% else %}
-        <h1>Add Destination</h1>
+        <h1>
+          <i class="fa-solid fa-file-circle-plus fa-lg" style="color: #FCA311;"></i>
+          Add Destination
+        </h1>
       {% endif %}
     </div>
     <form action="" method='post' class='form-container'>

@@ -41,11 +41,11 @@ td {
 td > * {
   width: 100%;
   padding: 2px 4px;
-  font-size: var(--font-l);
+  font-size: var(--font-reg);
 }
 
 td > textarea {
-  height: calc(4 * var(--font-l) + 8px);
+  height: calc(4 * var(--font-reg) + 8px);
   font-family: inherit;
 }
 

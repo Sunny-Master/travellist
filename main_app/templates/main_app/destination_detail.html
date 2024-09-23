@@ -15,28 +15,30 @@
 <section class="card">
   <div class="card-content">
     <h1>{{ destination.name }}</h1>
-    <div class="img-container" id="destination-image">
-      <img 
-      src="{{destination.image_url}}" 
-      alt="{{destination.name}}"
-      >
-    </div>      
-    <div class="second-half">
-      <div class="card-data">
-        <label>Type </label>
-        <h3>{{ destination.get_type_display }}</h3>
+    <div class="detail-container">
+      <div class="img-container" id="destination-image">
+        <img 
+        src="{{destination.image_url}}" 
+        alt="{{destination.name}}"
+        >
       </div>
-      <div class="card-data">
-        <label>Location </label>
-        <h3>{{ destination.city }}, {{ destination.country }}</h3>
-      </div>
-      <div class="card-data">
-        <label>Comment </label>
-        <h3>Date Visited: {{destination.date}} // {{ destination.comment }}</h3>
-      </div>
-      <div class="card-data">
-        <label>Rating </label>
-        <h3>{{ destination.rating }}/10</h3>
+      <div class="second-half">
+        <div class="card-data">
+          <label>Type </label>
+          <h3>{{ destination.get_type_display }}</h3>
+        </div>
+        <div class="card-data">
+          <label>Location </label>
+          <h3>{{ destination.city }}, {{ destination.country }}</h3>
+        </div>
+        <div class="card-data">
+          <label>Comment </label>
+          <h3>Date Visited: {{destination.date}} // {{ destination.comment }}</h3>
+        </div>
+        <div class="card-data">
+          <label>Rating </label>
+          <h3>{{ destination.rating }}/10</h3>
+        </div>
       </div>
     </div>
     <div class="actions">
