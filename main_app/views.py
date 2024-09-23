@@ -21,3 +21,11 @@ class DestinationCreate(CreateView):
   def form_valid(self, form):
     form.instance.user = self.request.user
     return super().form_valid(form)
+  
+class DestinationUpdate(UpdateView):
+  model = Destination
+  fields = ['name', 'type', 'city', 'country', 'comment', 'image_url', 'rating']
+
+class DestinationDelete(DeleteView):
+  model = Destination
+  success_url = '/destinations/'

@@ -44,6 +44,12 @@ h3 {
   margin: 0.5rem 1rem;
 }
 
+.actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 
 
 

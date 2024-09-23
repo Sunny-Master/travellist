@@ -36,6 +36,18 @@
         <h3>{{ destination.rating }}/5</h3>
       </div>
     </div>
+    <div class="actions">
+      <a href="{% url "destination-update" destination.id %}" class="btn warn">
+        <span>
+          <i class="fa-solid fa-file-pen" ></i>
+        </span>
+      </a>
+      <a href="{% url "destination-delete" destination.id %}" class="btn danger">
+        <span>
+          <i class="fa-solid fa-file-circle-xmark" ></i>
+        </span>
+      </a>
+    </div>
   </div>
 </section>
 
