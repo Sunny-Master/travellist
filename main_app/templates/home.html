@@ -11,4 +11,24 @@
   <h1>Hello Travellers!!</h1>
 </section>
 
+{% if not user.is_authenticated %}
+  <section class="card">
+    <div class="card-content">
+      <h1>Login</h1>
+      <form action="{% url "home" %}" method="post" class="form-container">
+        {% csrf_token %}
+        <table>
+          {{ form.as_table }}
+        </table>
+        <input type="hidden" name="next" value="{{ next }}">
+        <button type="submit" class="btn submit">
+          <span>
+            Login
+          </span>
+        </button>
+      </form>
+    </div>
+  </section>
+{% endif %}
+
 {% endblock %}
