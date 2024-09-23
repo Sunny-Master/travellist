@@ -31,7 +31,7 @@
     </div>
     <nav>
       {% if user.is_authenticated %}
-        <a href="{% url "destination-index" %}">All Destinations</a>
+        <a href="{% url "destination-index" %}">{{user.username}}'s Destinations</a>
         <a href="{% url "destination-create" %}">Add Destination</a>
         <a href="{% url "logout" %}">Log Out</a>
       {% else %}

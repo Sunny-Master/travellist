@@ -5,6 +5,7 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth.views import LoginView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 # Sign Up
 def signup(request):
@@ -28,13 +29,16 @@ def signup(request):
 class Home(LoginView):
   template_name = 'home.html'
 
-class DestinationList(ListView):
+class DestinationList(LoginRequiredMixin, ListView):
   model = Destination
 
-class DestinationDetail(DetailView):
+  def get_queryset(self):
+    return Destination.objects.filter(user=self.request.user)
+
+class DestinationDetail(LoginRequiredMixin, DetailView):
   model = Destination
 
-class DestinationCreate(CreateView):
+class DestinationCreate(LoginRequiredMixin, CreateView):
   model = Destination
   fields = ['name', 'type', 'city', 'country', 'comment', 'image_url', 'rating']
 
@@ -42,7 +46,7 @@ class DestinationCreate(CreateView):
     form.instance.user = self.request.user
     return super().form_valid(form)
   
-class DestinationUpdate(UpdateView):
+class DestinationUpdate(LoginRequiredMixin, UpdateView):
   model = Destination
   fields = ['name', 'type', 'city', 'country', 'comment', 'image_url', 'rating']
 
