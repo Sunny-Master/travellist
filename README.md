@@ -1,7 +1,7 @@
 # Travellist
-<div style="display: flex; justify-content: center; gap: 1rem; max-height: 650px; max-width: 650px; flex-wrap: nowrap;">
-  <a href="#"><img src="https://i.imgur.com/5NRqvXq.png" /></a>
-  <a href="#"><img src="https://i.imgur.com/v5Fg7H2.png" /></a>
+<div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: nowrap;">
+  <a href="#"><img src="https://i.imgur.com/5NRqvXq.png" style="max-width: 300px;" /></a>
+  <a href="#"><img src="https://i.imgur.com/v5Fg7H2.png" style="max-width: 300px;"/></a>
 </div>
 
 ## Overview ✨ 
