@@ -35,11 +35,11 @@ Click the link below to open "Travellist" in your web browser, and "Sign up" to 
 
 ## Ice Box 🧊 
 
-- [ ] Upload image for the destination instead of providing image URL
-- [ ] Upload multiple images with option to delete any uploaded image
-- [ ] Option to select country/city name from a drop down list instead of manually typing it out
+- [x] Upload an image for the destination instead of providing image URL
+- [ ] Option to select country/city name from a drop down list
 - [ ] Golden-star rating for destinations instead of drop down select option
-- [ ] Option to create a want-to-go-places list 
+- [ ] Option to create a want-to-go-places list
+- [ ] Upload multiple images with option to delete any uploaded image 
 
 
 ## Attributions 🙏 
@@ -47,3 +47,5 @@ Click the link below to open "Travellist" in your web browser, and "Sign up" to 
 - Icons: [Font Awesome](https://fontawesome.com/)
 - Sample Images: [Pixabay](https://pixabay.com/)
 - Placeholder Images: [LoremFlickr](https://loremflickr.com/)
+- Date Picker: [MC Date picker](https://mcdatepicker.netlify.app/)
+- Image Upload Service: [Cloudinary](https://cloudinary.com)

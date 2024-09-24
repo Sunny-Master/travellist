@@ -81,3 +81,12 @@ td > a::after {
   left: 0;
   content: "Uploaded Image";
 }
+
+.star {
+  font-size: 30px;
+  cursor: pointer;
+  color: lightgray; /* Default star color */
+}
+.star.selected, .star:hover {
+  color: gold; /* Highlighted star color */
+}

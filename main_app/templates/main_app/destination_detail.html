@@ -45,7 +45,15 @@
         </div>
         <div class="card-data">
           <label>Rating </label>
-          <h3>{{ destination.rating }}/10</h3>
+          <h3>
+            {% for i in "0123456789" %}
+              {% if forloop.counter <= destination.rating %}
+                <span class="golden">★</span>
+              {% else %}
+                <span class="gray">★</span>
+              {% endif %}
+            {% endfor %}
+          </h3>
         </div>
       </div>
     </div>

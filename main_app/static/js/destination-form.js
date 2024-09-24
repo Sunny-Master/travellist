@@ -10,4 +10,3 @@ const picker = MCDatepicker.create({
 dateInput.addEventListener('click', () => {
   picker.open()
 })
-
