@@ -109,21 +109,11 @@ main {
   text-align: center;
 }
 
-.secondary, .submit {
+.secondary, .submit, .warn, .danger {
   color: var(--yellow-shade);
   border-color: var(--yellow-shade);
   background-color: var(--dark-navy);
 
-}
-
-.warn {
-  color: var(--warn);
-  border-color: var(--warn);
-}
-
-.danger {
-  color: var(--danger);
-  border-color: var(--danger);
 }
 
 .secondary:hover, .submit:hover {
