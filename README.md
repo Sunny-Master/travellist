@@ -1,5 +1,5 @@
 # Travellist
-<div style="display: flex; gap: 1rem;">
+<div style="display: flex; gap: 1rem; max-height: 650px; max-width: 650px; flex-wrap: nowrap;">
   <a href="#"><img src="https://i.imgur.com/5NRqvXq.png" /></a>
   <a href="#"><img src="https://i.imgur.com/v5Fg7H2.png" /></a>
 </div>
@@ -46,3 +46,4 @@ Click the link below to open "Travellist" in your web browser, and "Sign up" to 
 
 - Icons: [Font Awesome](https://fontawesome.com/)
 - Sample Images: [Pixabay](https://pixabay.com/)
+- Placeholder Images: [LoremFlickr](https://loremflickr.com/)

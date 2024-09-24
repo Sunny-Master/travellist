@@ -21,7 +21,12 @@
     <div class="detail-container">
       <div class="img-container" id="destination-image">
         <img 
-        src="{{destination.image_url}}" 
+        src="
+          {% if destination.image_url %} 
+            {{ destination.image_url }} 
+          {% else %}
+            https://loremflickr.com/1200/900/{{destination.country}}
+          {% endif %}" 
         alt="{{destination.name}}"
         >
       </div>
@@ -61,7 +66,12 @@
 
 <section id="screen-overlay">
   <img 
-    src="{{destination.image_url}}" 
+    src="
+      {% if destination.image_url %} 
+        {{ destination.image_url }} 
+      {% else %}
+        https://loremflickr.com/320/240/{{destination.country}}
+      {% endif %}" 
     alt="{{destination.name}}"
     class="image-overlay"
   >
