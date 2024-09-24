@@ -28,7 +28,7 @@ class Destination(models.Model):
   country = models.CharField(max_length=100)
   date = models.DateField('Visit Date', default=date.today)
   comment = models.TextField(max_length=250)
-  rating = models.IntegerField(default=1, choices=[(i, str(i)) for i in range(1, 10)])
+  rating = models.IntegerField(default=1, choices=[(i, str(i)) for i in range(1, 11)])
   image_url = models.URLField(
     max_length=500,
     blank=True,
