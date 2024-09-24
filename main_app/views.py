@@ -48,7 +48,7 @@ class DestinationCreate(LoginRequiredMixin, CreateView):
   
 class DestinationUpdate(LoginRequiredMixin, UpdateView):
   model = Destination
-  fields = ['country', 'city', 'date', 'comment', 'rating']
+  fields = ['country', 'city', 'date', 'comment', 'rating', 'image']
 
 class DestinationDelete(DeleteView):
   model = Destination

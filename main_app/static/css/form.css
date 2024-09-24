@@ -42,6 +42,7 @@ td > * {
   width: 100%;
   padding: 2px 4px;
   font-size: var(--font-reg);
+  display: flex;
 }
 
 td > textarea {
@@ -62,4 +63,21 @@ label {
 .red-text {
   background-color: var(--text-color);
   color: red;
+}
+
+input[type='checkbox'], td > label {
+  display: none;
+}
+
+td > a {
+  visibility: hidden;
+  position: relative;
+}
+
+td > a::after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "Uploaded Image";
 }
