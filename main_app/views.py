@@ -40,7 +40,7 @@ class DestinationDetail(LoginRequiredMixin, DetailView):
 
 class DestinationCreate(LoginRequiredMixin, CreateView):
   model = Destination
-  fields = ['name', 'type', 'country', 'city', 'date', 'comment', 'rating', 'image_url']
+  fields = ['name', 'type', 'country', 'city', 'date', 'comment', 'rating', 'image']
 
   def form_valid(self, form):
     form.instance.user = self.request.user
@@ -48,7 +48,7 @@ class DestinationCreate(LoginRequiredMixin, CreateView):
   
 class DestinationUpdate(LoginRequiredMixin, UpdateView):
   model = Destination
-  fields = ['type', 'country', 'city', 'date', 'comment', 'rating', 'image_url']
+  fields = ['country', 'city', 'date', 'comment', 'rating']
 
 class DestinationDelete(DeleteView):
   model = Destination

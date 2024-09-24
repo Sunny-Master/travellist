@@ -2,6 +2,7 @@ from django.db import models
 from django.urls import reverse
 from django.contrib.auth.models import User
 from datetime import date
+from cloudinary.models import CloudinaryField
 
 D_TYPES = (
   ('O', 'Other'),
@@ -29,8 +30,7 @@ class Destination(models.Model):
   date = models.DateField('Visit Date', default=date.today)
   comment = models.TextField(max_length=250)
   rating = models.IntegerField(default=1, choices=[(i, str(i)) for i in range(1, 11)])
-  image_url = models.URLField(
-    max_length=500,
+  image = CloudinaryField(
     blank=True,
     null=True
   )

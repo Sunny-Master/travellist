@@ -22,12 +22,12 @@
       <div class="img-container" id="destination-image">
         <img 
         src="
-          {% if destination.image_url %} 
-            {{ destination.image_url }} 
+          {% if destination.image.url %} 
+            {{ destination.image.url }} 
           {% else %}
             https://loremflickr.com/1200/900/{{destination.country}}
           {% endif %}" 
-        alt="{{destination.name}}"
+        alt="Image for {{destination.name}}"
         >
       </div>
       <div class="second-half">
@@ -67,12 +67,12 @@
 <section id="screen-overlay">
   <img 
     src="
-      {% if destination.image_url %} 
-        {{ destination.image_url }} 
+      {% if destination.image.url %} 
+        {{ destination.image.url }} 
       {% else %}
         https://loremflickr.com/320/240/{{destination.country}}
       {% endif %}" 
-    alt="{{destination.name}}"
+    alt="Image for {{destination.name}}"
     class="image-overlay"
   >
 </section>
