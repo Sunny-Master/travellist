@@ -50,3 +50,4 @@ Click the link below to open "Travellist" in your web browser, and "Sign up" to 
 - Date Picker: [MC Date picker](https://mcdatepicker.netlify.app/)
 - Image Upload Service: [Cloudinary](https://cloudinary.com)
 - Countries Library: [Django_Countries](https://pypi.org/project/django-countries/)
+- Background Image: Photo by <a href="https://unsplash.com/@auchynnikau?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Slava Auchynnikau</a> on <a href="https://unsplash.com/photos/a-bunch-of-hot-air-balloons-flying-in-the-sky-YcY1M9sYYCw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
