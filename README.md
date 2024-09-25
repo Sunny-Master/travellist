@@ -36,8 +36,8 @@ Click the link below to open "Travellist" in your web browser, and "Sign up" to 
 ## Ice Box 🧊 
 
 - [x] Upload an image for the destination instead of providing image URL
-- [ ] Option to select country/city name from a drop down list
-- [ ] Golden-star rating for destinations instead of drop down select option
+- [x] Option to select country name from a drop down list
+- [ ] Golden-star rating for destinations 
 - [ ] Option to create a want-to-go-places list
 - [ ] Upload multiple images with option to delete any uploaded image 
 
@@ -49,3 +49,4 @@ Click the link below to open "Travellist" in your web browser, and "Sign up" to 
 - Placeholder Images: [LoremFlickr](https://loremflickr.com/)
 - Date Picker: [MC Date picker](https://mcdatepicker.netlify.app/)
 - Image Upload Service: [Cloudinary](https://cloudinary.com)
+- Countries Library: [Django_Countries](https://pypi.org/project/django-countries/)

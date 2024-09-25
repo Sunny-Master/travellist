@@ -3,3 +3,7 @@ psycopg2>=2.8
 django-environ>=0.10.0
 cloudinary
 django-cloudinary-storage
+dj-database-url==2.2.0
+gunicorn==23.0.0
+whitenoise==6.7.0
+django-countries[pyuca]

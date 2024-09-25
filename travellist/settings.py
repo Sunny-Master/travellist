@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'main_app',
     'cloudinary',
     'cloudinary_storage',
+    'django_countries',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

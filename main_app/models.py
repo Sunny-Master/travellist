@@ -3,6 +3,7 @@ from django.urls import reverse
 from django.contrib.auth.models import User
 from datetime import date
 from cloudinary.models import CloudinaryField
+from django_countries.fields import CountryField
 
 D_TYPES = (
   ('O', 'Other'),
@@ -25,8 +26,8 @@ class Destination(models.Model):
     choices=D_TYPES,
     default=D_TYPES[0][0]
   )
+  country = CountryField()
   city = models.CharField(max_length=100)
-  country = models.CharField(max_length=100)
   date = models.DateField('Visit Date', default=date.today)
   comment = models.TextField(max_length=250)
   rating = models.IntegerField(default=1, choices=[(i, str(i)) for i in range(1, 11)])
