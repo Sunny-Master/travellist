@@ -6,3 +6,4 @@ gunicorn==23.0.0
 whitenoise==6.7.0
 cloudinary
 django-cloudinary-storage
+django-countries
