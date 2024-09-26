@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'main_app',
     'cloudinary',
     'cloudinary_storage',
-    'django_countries',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -148,16 +147,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-WHITENOISE_MANIFEST_STRICT = False
-
 STATIC_URL = "static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-STATICFILES_FINDERS = [
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-]
 
 LOGIN_REDIRECT_URL = 'destination-index'
 LOGOUT_REDIRECT_URL = 'home'

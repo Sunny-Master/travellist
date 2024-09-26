@@ -16,9 +16,9 @@
   <section class="card">
     <div class="card-content">
       <h1>
-        <img src={{ destination.country.flag }}/>
+        {% comment %} <img src={{ destination.country.flag }}/> {% endcomment %}
         {{ destination.name }}
-        <img src={{ destination.country.flag }}/>
+        {% comment %} <img src={{ destination.country.flag }}/> {% endcomment %}
       </h1>
       <div class="detail-container">
         <div class="img-container" id="destination-image">
@@ -40,7 +40,7 @@
           <div class="card-data">
             <label>Location </label>
             <h3>
-              {{ destination.city }}, {{ destination.country.name }} 
+              {{ destination.city }}, {{ destination.country }} 
             </h3>
           </div>
           <div class="card-data">
