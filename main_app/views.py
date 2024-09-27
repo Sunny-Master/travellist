@@ -50,6 +50,6 @@ class DestinationUpdate(LoginRequiredMixin, UpdateView):
   model = Destination
   fields = ['country', 'city', 'date', 'comment', 'rating', 'image']
 
-class DestinationDelete(DeleteView):
+class DestinationDelete(LoginRequiredMixin, DeleteView):
   model = Destination
   success_url = '/destinations/'
