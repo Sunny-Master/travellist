@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   background-color: rgb(20, 33, 61, 0.25);
   border-radius: var(--card-border-radius);
+  overflow-y: auto;
 }
 
 .card {
