@@ -7,6 +7,7 @@ from django_countries.fields import CountryField
 
 D_TYPES = (
   ('O', 'Other'),
+  ('C', 'City/Town/Neighborhood/Village'),
   ('B', 'Beach / Island'),
   ('W', 'Waterfall'),
   ('H', 'Hill / Mountain / Cliff'),
@@ -27,7 +28,7 @@ class Destination(models.Model):
     default=D_TYPES[0][0]
   )
   country = CountryField()
-  city = models.CharField(max_length=100)
+  city = models.CharField('Location', max_length=100, )
   date = models.DateField('Visit Date', default=date.today)
   comment = models.TextField(max_length=250)
   rating = models.IntegerField(default=1, choices=[(i, str(i)) for i in range(1, 11)])
