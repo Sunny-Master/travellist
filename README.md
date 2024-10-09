@@ -13,6 +13,7 @@ Travelling is my favorite hobby as it gives me a great joy to explore this world
 ### Planning 🎨 
 
 * [Trello Board](https://trello.com/b/10eaujXm/travellist)
+> Please refer to the [iTravel](https://github.com/Sunny-Master/iTravel) repository for the same app, which is built using locally installed Django and other libraries, and utilizes AWS S3 instead of Cloudinary for image file uploads. [Click here](https://travellist-617c1b2be415.herokuapp.com/) for the deployed version of that app.
 
 ## Technologies used ⚙️
 
