@@ -10,11 +10,6 @@
 ## Motivation 🧠 
 Travelling is my favorite hobby as it gives me a great joy to explore this world, its distinct cultures, architecture, natural wonders and create memories. I have always struggled to find options to store specific details of the places I have visited to refer to them in future or to just go down that memory lane again. Hence, I thought of creating an app to just do that. 
 
-## Getting Started 🕹️ 
-Click the link below to open "Travellist" in your web browser, and "Sign up" to start adding your visited destinations and save your memories to cherish in future!
-
-> # [Click Here to Open "Travellist"](https://inventory-master-60711f64e37d.herokuapp.com/)
-
 ### Planning 🎨 
 
 * [Trello Board](https://trello.com/b/10eaujXm/travellist)
